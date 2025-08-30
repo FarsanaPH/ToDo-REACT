@@ -57,7 +57,7 @@ function Home() {
             const result = await DeleteToDoAPI(id);
             if (result.status >= 200 && result.status < 300) {
                 setIsToDoChanged(Date.now());
-                toast.success("Task Deleted Successfully!!")
+                toast.success("Task Removed Successfully!!")
             }
         } catch (err) {
             console.log(err);
