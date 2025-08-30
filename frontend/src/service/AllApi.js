@@ -25,3 +25,8 @@ export const getEditToDoAPI = async(id) => {
 export const updateToDoAPI = async(id,reqBody) => {
     return commonApi("PUT",`${serverURL}/todos/${id}`,reqBody)
 }
+
+// Update a ToDo with only one field
+export const patchToDoAPI = async(id,reqBody) => {
+    return commonApi("PATCH",`${serverURL}/todos/${id}`,reqBody)
+}
